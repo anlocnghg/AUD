@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>AUD - HTML5 Audio Playlist</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+
+        <!-- Optional theme -->
+        <link href="css/bootstrap-theme.css" rel="stylesheet"> 
+
+        <!-- Custom style -->
+        <link href="css/style.css" rel="stylesheet"> 
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="container" class="container">
+                <div class="row">
+                    <div id="myDiv" class="col-md-6 col-sm-6">
+
+                        <audio id="myAudio" controls="controls" preload="metadata">
+                            <source src="audio/Horse.mp3" type="audio/mpeg">
+                            Your browser does not support the <code>audio</code> tag.
+                        </audio>
+
+                        <div id="myAudioControllers" class="well">
+                            <button type="button" id="playBtn" class="btn btn-primary">Play</button>
+                            <button type="button" id="pauseBtn" class="btn btn-primary">Pause</button>
+
+                            <button type="button" id="prevBtn" class="btn btn-primary">Prev</button>
+                            <button type="button" id="nextBtn" class="btn btn-primary">Next</button>
+
+                            <button type="button" id="decreaseVolBtn" class="btn btn-primary">Vol -</button>
+                            <button type="button" id="increaseVolBtn" class="btn btn-primary">Vol +</button>
+                        </div>
+
+                        <div id="myAudioStatus" class="alert alert-info">
+                            <p></p>
+                        </div>
+
+                        <form role="form">
+                            <div class="form-group">
+                                <label for="myAudioPlaylist">Select a track from:</label> 
+                                <select id="myAudioPlaylist" class="form-control">
+                                    <option value="audio/CenturyFox.mp3">Century Fox</option>
+                                    <option value="audio/Helicopter.mp3">Helicopter</option>
+                                    <option value="audio/UniversalStudios.mp3">Universal Studio</option>
+                                    <option value="audio/Horse.mp3">Horse</option>
+                                    <option value="audio/Army.mp3">Army</option>
+                                    <option value="audio/BabyCry.mp3">Baby Cry</option>
+                                    <option value="audio/BraveHeart.mp3">BraveHeart</option>
+                                </select>
+                            </div>
+
+                            <div class="checkbox" id="repeatCheckBox">
+                                <label class="checkbox-inline">
+                                    <input id="isRepeat" type="checkbox" value="yesRepeat">
+                                    Repeat
+                                </label>
+                            </div>
+
+                            <div class="radio" id="repeatOptions">
+                                <label class="radio-inline">
+                                    <input type="radio" name="repeatOptions" id="optionTrack" value="track" checked>
+                                    A track
+                                </label>
+
+                                <label class="radio-inline">
+                                    <input type="radio" name="repeatOptions" id="optionPlaylist" value="playlist">
+                                    Playlist
+                                </label>
+
+                                <label class="radio-inline">
+                                    <input type="radio" name="repeatOptions" id="optionRandom" value="random">
+                                    Random
+                                </label>
+
+                            </div>
+
+
+                        </form>
+
+
+
+                    </div> <!-- / #myDiv -->
+                </div>
+
+            </div> <!-- / #.container -->
+        </div> <!-- / #wrapper -->
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="js/jquery.js"></script>
+
+        <!-- Include all compiled plugins (below), or include individual files as needed --> 
+        <script src="js/bootstrap.js"></script>
+
+        <!-- Script -->
+        <script src="js/script.js"></script>
+
+        <script>
+
+        </script>
+    </body>
+</html>
+
+
+<!--
+ * AUD - HTML5 Audio Playlist 
+ *	using HTML5 Audio, JavaScript, Bootstrap, and jQuery
+ *	09/2015
+ * By Loc H. Nguyen
+ * Email: loc.nguyen.st.louis[at]Gmail.com
+ * URL: locnguyen.us
+-->
